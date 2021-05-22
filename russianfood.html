@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><title>Lital personal project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<table id="t01">
+    <tr>
+        <td>
+            <script type = "text/javascript">
+                var d = new Date();
+                var days = ['ראשון','שני','שלישי','רביעי','חמישי','שישי','שבת'];
+                var currentDay = days[d.getDay()];
+                var hours = d.getHours();
+                var minutes = d.getMinutes();
+               document.write("היום יום " + currentDay + "," + "השעה " + hours + ":" + minutes);
+            </script>
+        </td>
+        <td><img width="300" src="pics/russian food.jpg"></td>
+        <td><input type="button" value="Login" onclick="location.href='otherpage.html';"></td>
+    </tr>
+    <tr>
+        <th colspan="3">
+            <li><a href = "./main.html"> עמוד ראשי </a></li>
+
+        </th>
+    </tr>
+    <tr>
+        <td colspan="3" >רוסיה מורכבת מהרבה תרבויות שונות, ולכן המטבח הרוסי מאוד רחב. המאכלים העיקריים שם הם- מאכלי דגים, מאכלי בשר, קוויאר, פטריות, דבש, דייסות, לביבות, ועוד. כל המזון הזה נצרך גם ברוסיה ביומיום. המטבח הרוסי המודרני משלב באופן יצירתי מנות מעודנות עם מנות רוסיות מסורתיות.
+        <br/>
+        <img src="pics/russian_food_collage.jpg">
+        </td>
+
+
+    </tr>
+    <tr>
+        <td colspan="3"><address>
+            Written by <a href="mailto:litalgilin@gmail.com">Jon Doe</a>.<br>
+            Visit us at: <a href = "www.foodies.com">www.foodies.com</a><br>
+            Box 564, Disneyland<br>
+            ISRAEL
+        </address>
+    </tr>
+</table>
+
+<script>
+function getDay() {
+  var d = new Date();
+  var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var n = days[d.getDay()];
+  document.getElementById("demo").innerHTML = "Hello World!";
+  document.write(n);
+}
+getDay();
+</script>
+</body>
+</html>
