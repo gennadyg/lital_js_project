@@ -15,7 +15,7 @@
 	  </tr>
 	  <tr>
 		<td>שם משפחה:</td>
-		<td><input type="text" id="surname" name="sname" required><br></td>
+		<td><input type="text" id="sname" name="sname" required><br></td>
 	  </tr>
 	  	  <tr>
 		<td>אימייל:</td>
@@ -41,7 +41,7 @@
 	  <tr>
 		<td>מה האוכל האהוב עליכם?</td>
 		<td>
-			<select name="town" required>
+			<select name="food" required>
 			  <option value="1">אוכל סיני</option>
 			  <option value="2">אוכל תאילנדי</option>
 			  <option value="3">אוכל איטלקי</option>
@@ -75,7 +75,7 @@
 	  </tr>
 	  <tr>
 	  <td>
-	  <button type="submit" value="שלח">שלח</button>
+	  <button type="submit" onclick="clicked();" value="שלח">שלח</button>
 		  <script type="text/javascript">
 			  function clicked() {
 			    var firstName = document.getElementById("fname").value;
