@@ -7,12 +7,15 @@
 <table id="t01">
     <tr>
         <td>
-            <script type = "text/javascript" src="./time.js">
-               displayTime()
-            </script>
+            <script type = "text/javascript" src="./time.js">displayTime()</script>
+            <marquee id="scroller" direction = "up">
+                <p><script type = "text/javascript" src="./time.js">displayTime()</script><p/>  <br/> רק היום במקס ברנר! לוקחים קינוח מעל 50 שקל ומקבלים עוד קינוח חינם!<br/>
+                <p><p/> התווסף מתכון של סושי חדש בכל המסעדות הסיניות בישראל! <br/> <br/>
+                <p><p/> מתחשק לכם אוכל איטלקי? או אוכל תאילנדי? אם אתם מתלבטים, תקראו באתר שלנו על סוגי האוכל ותבחרו! <br/> <br/>
+            </marquee>
         </td>
         <td><img width="300" src="pics/food.jpg"></td>
-        <td><input type="button" value="Login" onclick="location.href='otherpage.html';"></td>
+        <td><input align="left" type="button" value="Login" onclick="location.href='tofes_rishum.html';"></td>
     </tr>
     <tr>
         <th colspan="3">
@@ -24,9 +27,7 @@
         </th>
     </tr>
     <tr>
-        <td colspan="3" >האתר הרשמי של אוכל ומידע כללי על אוכל בארצות שונות, בכל דף יהיה הסבר על סוג האוכל שמתואר בו, אם תרצו לדעת על אוכל כלשהו לפני שאתם הולכים למסעדה, בקרו באתר</td>
-<!--        <td><a href = "http://rishonim-e-y.org.il/"> אתר </a></td>-->
-
+       <td colspan="3">האתר הרשמי של אוכל ומידע כללי על אוכל בארצות שונות, בכל דף יהיה הסבר על סוג האוכל שמתואר בו, אם תרצו לדעת על אוכל כלשהו לפני שאתם הולכים למסעדה, בקרו באתר</td>
     </tr>
     <tr>
         <td colspan="3"><address>
@@ -37,16 +38,5 @@
         </address>
     </tr>
 </table>
-
-<script>
-function getDay() {
-  var d = new Date();
-  var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  var n = days[d.getDay()];
-  document.getElementById("demo").innerHTML = "Hello World!";
-  document.write(n);
-}
-getDay();
-</script>
 </body>
 </html>

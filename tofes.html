@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8"><title>Lital personal project</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body dir = "rtl">
+<form name="signup" method="get" action="main.html">
+  <table border="4" style="background-color:yellow">
+	  <tr>
+		<td colspan="2"><h4>מלאו את הטופס הרישום לאתר האוכל</h4></td>
+	  </tr>
+	  <tr>
+		<td>שם פרטי:</td>
+		<td><input type="text" id="fname" name="fname" required><br></td>
+	  </tr>
+	  <tr>
+		  <td>
+			  <button id="submitForm" onclick="clicked();" value="שלח">שלח</button>
+			  <script type="text/javascript">
+			  function clicked() {
+			    var firstName = document.getElementById("fname").value;
+                alert("Thanks for singing up " + firstName)
+		      }
+          </script>
+		  </td>
+		  <td>
+			  <button type="reset" value="אפס">אפס</button>
+		  </td>
+	  </tr>
+  </table>
+</form>
+</body>
+</html>

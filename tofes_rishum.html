@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8"><title>Lital personal project</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body dir = "rtl">
+<form name="signup" method="get" action="main.html">
+  <table border="4" style="background-color:yellow">
+	  <tr>
+		<td colspan="2"><h4>מלאו את הטופס הרישום לאתר האוכל</h4></td>
+	  </tr>
+	  <tr>
+		<td>שם פרטי:</td>
+		<td><input type="text" id="fname" name="fname" required><br></td>
+	  </tr>
+	  <tr>
+		<td>שם משפחה:</td>
+		<td><input type="text" id="surname" name="sname" required><br></td>
+	  </tr>
+	  	  <tr>
+		<td>אימייל:</td>
+		<td><input type="email" id="email" name="email" required><br></td>
+	  </tr>
+	  <tr>
+		<td>טלפון:</td>
+		<td><input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{7}" required><br></td>
+	  </tr>
+	  <tr>
+		  <td>סיסמה:</td>
+		  <td><input type="password" id="password" name="password" required><br></td>
+	  </tr>
+	  <tr>
+		<td>מין:</td>
+		<td>
+			<input type="radio" id="male" name="gender" checked="checked" required>
+			<label for="male">זכר</label>
+			<input type="radio" id="female" name="gender">
+			<label for="male">נקבה</label><br>
+		</td>
+	  </tr>
+	  <tr>
+		<td>מה האוכל האהוב עליכם?</td>
+		<td>
+			<select name="town" required>
+			  <option value="1">אוכל סיני</option>
+			  <option value="2">אוכל תאילנדי</option>
+			  <option value="3">אוכל איטלקי</option>
+				<option value="4">אוכל רוסי</option>
+				<option value="5">אוכל צרפתי</option>
+			</select>
+		</td>
+	  </tr>
+	  <tr>
+	    <td>איזה מסעדות את\ה הכי אוהב\ת?</td>
+	    <td>
+		    <input type="checkbox" id="history" name="history" value="פיצה" required>
+			  <label for="history">דומינוס</label><br>
+			  <input type="checkbox" id="movie" name="movie" value="סושי">
+			  <label for="movie"> אישימוטו</label><br>
+			  <input type="checkbox" id="nature" name="nature" value="המבורגר">
+			  <label for="nature">ג'ירף</label><br>
+			  <input type="checkbox" id="family" name="family" value="שוקולד">
+			  <label for="family">מקסברנר</label><br>
+			  <input type="checkbox" id="fun" name="fun" value="פיצצה">
+			  <label for="fun"> פיצה האט</label><br>
+		</td>
+	  </tr>
+
+	  <tr>
+	    <td>הערות</td>
+		<td>
+	        <textarea id="remarks" name="remarks" rows="2" cols="30">
+            </textarea>
+		</td>
+	  </tr>
+	  <tr>
+	  <td>
+	  <button type="submit" value="שלח">שלח</button>
+		  <script type="text/javascript">
+			  function clicked() {
+			    var firstName = document.getElementById("fname").value;
+			    var familyName = document.getElementById("sname").value;
+                alert("Thanks for signing up " + firstName + " " + familyName)
+		      }
+          </script>
+	  </td>
+	  <td>
+	  <button type="reset" value="אפס">אפס</button>
+	  </td>
+	  </tr>
+  </table>
+</form>
+</body>
+</html>
